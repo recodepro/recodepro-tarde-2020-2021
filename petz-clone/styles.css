@@ -1,0 +1,50 @@
+/* Configuração geral */
+* {
+    margin: 0px;    /* Espaçamento externo */
+    padding: 0px;   /* Espaçamento interno */
+    overflow-x: hidden; /* Barra de rolagem escondida no eixo X, ou seja, horizontalmente */
+}
+/* Cabeçalho */
+.header {
+    background-color: #FBCF3B;
+    width: 100%;
+    padding: 32px;
+}
+.header input {
+    width: 500px;
+    height: 42px;
+    padding: 0 16px;
+    margin: 0 0 0 264px;
+    border-radius: 6px; /* Arredondamento das bordas */
+    border: 0;
+}
+.header button {
+    width: 132px;
+    height: 42px;
+    color: #fff;
+    background: #1B6DB0;
+    border-radius: 6px;
+    border: 0;
+}
+/* Menu */
+.menu {
+    width: 100%;
+    padding: 16px;
+    background: #1B6DB0;
+    text-align: center;
+}
+/* Opções do menu */
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 16px;
+    font-size: 20px;
+}
+/* Conteúdo */
+.content {
+    width: 100%;
+    height: 370px;
+    background-image: url("img/banner-1.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
