@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #24292e;
+    padding: 12px 32px;
+}
+.header .logo {
+    width: 32px;
+    height: 32px;
+}
+.header input {
+    background-color: rgb(65, 65, 65);
+    width: 232px;
+    padding: 6px;
+    margin: 0 16px;
+    border-radius: 6px;
+    border: 0
+}
+.header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 6px;
+}
+.header img.user {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-left: 900px
+}
+.content {
+    width: 100%;
+    height: 600px;
+    font-size: 0px;
+}
+/* Container de informações do usuário */
+.content .info-user {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    vertical-align: bottom;
+    text-align: center;
+    font-size: 18px;
+}
+/* Imagem do usuário que está dentro do container de informações do usuário */
+.content .info-user img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 32px;
+}
+/* Container de repositórios */
+.content .info-repo {
+    background-color: blue;
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    font-size: 18px;
+}
+
+
+/* 
+    Significado dos valores de Padding e Margin
+
+    Um parâmetro
+
+    1 - Todas bordas
+
+    Exemplo:
+
+    padding: 12px
+    margin: 12px
+    --------------------------------
+    Dois parâmetros
+
+    1 - Borda superior e inferior
+    2 - Borda direita e esquerda
+
+    Exemplo:
+
+    padding: 12px 32px
+    margin: 12px 32px
+    ---------------------------------
+    Três parâmetros
+
+    1 - Borda superior
+    2 - Borda direita e esquerda
+    3 - Borda infeiror 
+
+    Exemplo:
+
+    padding: 12px 32px 12
+    margin: 12px 32px 12px
+    ---------------------------------
+    Quatro parâmetros
+
+    1 - Bora superior
+    2 - Borda direita
+    3 - Borda inferior
+    4 - Borda Esquerda
+
+    Exemplo:
+
+    padding: 12px 32px 12px 32px
+    margin: 12px 32px 12px 32px
+*/
