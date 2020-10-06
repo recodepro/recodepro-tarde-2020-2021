@@ -1,0 +1,17 @@
+button {
+    height: 40px;
+    width: 100px;
+    border-radius: 4px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-1 {
+    background-color: blue;
+}
+.btn-2 {
+    background-color: red;
+}
+.btn-3 {
+    background-color: green;
+}

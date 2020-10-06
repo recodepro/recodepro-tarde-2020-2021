@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(211, 224, 226);
+}
+.header {
+    width: 100%;
+    padding: 8px 26px ;
+    background-color: #1f8585;
+}
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 6px 2px;
+}
+button img {
+    width: 20px;
+}
+.aside {
+    background-color: #fff;
+    box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.3);
+    width: 264px;
+    height: 900px;
+    transition: 0.5s;
+}
+.aside a{
+    display: block;
+    padding: 26px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #3a3a3a;
+}
+.aside a:hover {
+    transition: 0.5s;
+    background-color: #ccc;
+}
