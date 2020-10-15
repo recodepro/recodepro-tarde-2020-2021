@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Entre ou cadastre-se</title>
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <main>
+        <section class="login">
+            <div class="card">
+                <h1>Entre ou cadastre-se</h1>
+                <input id="email" type="email" placeholder="Digite o seu e-mail">
+                <input id="senha" type="password" placeholder="Digite a sua senha">
+                <button onclick="login()"><b>Entrar</b></button>
+                <a href="./cadastro.html">Ainda não possui cadastro? Clique aqui.</a>
+            </div>
+        </section>
+        <section class="cadastro">
+            <div class="image"></div>
+        </section>
+    </main>
+
+    <script>
+        function login() {
+            let email = document.getElementById('email')
+            let senha = document.getElementById('senha')
+
+            let emailStorage = localStorage.getItem('email')
+            let senhaStorage = localStorage.getItem('senha')
+
+            if (email.value == emailStorage && senha.value == senhaStorage) {
+                localStorage.setItem('usuario_logado', 1)
+                alert("Login realizado com sucesso!")
+                location.href = "./home.html"
+            }
+            else {
+                alert("E-mail ou e senha inválido!")
+            }
+        }
+    </script>
+</body>
+</html>

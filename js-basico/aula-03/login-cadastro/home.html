@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./css/global.css">
+</head>
+<body>
+    
+    <h1>Olá, usuário!</h1>
+    <a href="./index.html" onclick="reset()">Sair</a>
+
+    <script>
+
+        if (localStorage.getItem('usuario_logado') != 1) {
+            location.href = './index.html'
+        }
+
+        function reset() {
+            localStorage.setItem('usuario_logado', 0)
+        }
+
+    </script>
+</body>
+</html>

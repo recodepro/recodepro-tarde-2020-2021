@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Cadastre-se</title>
+
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Cadastre-se</h1>
+            <input id="email" type="email" placeholder="Digite um e-mail">
+            <input id="senha" type="password" placeholder="Digite uma senha">
+            <input id="confirmar-senha" type="password" placeholder="Confirme a sua senha">
+            <button onclick="cadastrar()"><b>Cadastre-se</b></button>
+            <a href="./index.html">Já possui cadastro? Realize o login.</a>
+        </div>
+    </main>
+
+    <script>
+        function validaCadastro() {
+            let email = document.getElementById('email')
+            let senha = document.getElementById('senha')
+            let confirmarSenha = document.getElementById('confirmar-senha')
+
+            if ((email.value.length > 5 && senha.value > 3) && (senha.value == confirmarSenha.value)) { 
+                alert("Cadastro efetuado com sucesso.")
+                return true
+            }
+            else if (senha.value != confirmarSenha.value) {
+                alert("As senhas não correspondem, digite senhas iguais para realizar o cadastro.")
+            }
+            else if (email.value.length <= 5) {
+                alert("Digite um e-mail válido para realizar o cadastro.")
+            }
+            else {
+                alert("Preencha todos os campos para realizar o cadastro.")
+            }
+
+            return false
+        }
+
+        function cadastrar() {
+            let email = document.getElementById('email')
+            let senha = document.getElementById('senha')
+
+            if(validaCadastro() == true) {
+                localStorage.setItem("email", email.value)
+                localStorage.setItem("senha", senha.value)
+            }
+        }
+    </script>
+</body>
+</html>

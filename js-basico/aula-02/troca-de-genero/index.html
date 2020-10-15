@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset='utf-8'>
+    <title>Atividade</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- main == principal -->
+    <div class="main">
+        <!-- Imagem -->
+        <img src="img/interrogacao.jpeg" id="img">
+
+        <!-- footer == rodapé -->
+        <div class="footer">
+            <label for="m">
+                <input type="radio" name="genero" id="m">
+                Masculino
+            </label>
+
+            <label for="f">
+                <input type="radio" name="genero" id="f">
+                Feminino
+            </label>
+    
+            <button class="btn" onclick="trocar()">Trocar foto</button>
+        </div>
+    </div>
+
+    <script>
+        function trocar() {
+            let img = document.getElementById('img')
+            let m = document.getElementById('m')
+            let f = document.getElementById('f')
+
+            if (m.checked) {
+                img.src = 'img/homem.jpeg'
+            }
+            else if (f.checked) {
+                img.src = 'img/mulher.jpeg'
+            }
+            else {
+                img.src = 'img/interrogacao.jpeg'
+            }
+        }
+    </script>
+</body>
+</html>

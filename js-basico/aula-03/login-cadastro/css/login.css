@@ -1,0 +1,52 @@
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+section {
+    height: 100%;
+    width: 50%;
+}
+.login {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .card h1 {
+    margin-bottom: 32px;
+}
+.login .card input {
+    display: block;
+    width: 100%;
+    margin-top: 16px;
+    padding-left: 16px;
+    height: 48px;
+    border-radius: 6px;
+    border: 1px solid #b8b8b8
+}
+.login .card button {
+    width: 100%;
+    margin-top: 16px;
+    text-align: center;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #53c794;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.login .card a {
+    margin-top: 8px;
+}
+.cadastro {
+    background-color: #53c794;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cadastro .image {
+    background-image: url('../images/login.svg');
+    width: 80%;
+    height: 80%;
+}
