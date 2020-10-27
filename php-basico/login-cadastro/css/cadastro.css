@@ -7,14 +7,19 @@ main {
     justify-content: center;
 }
 main .card {
-    background-color: #fff;
-    width: 500px;
+    display: flex;
+    justify-content: center;
+    width: 464px;
     height: 70%;
     border-radius: 6px;
+    background-color: #fff;
+}
+main .card form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 main .card h1 {
     margin-bottom: 32px;
