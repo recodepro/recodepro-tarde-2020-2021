@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Entre ou cadastre-se</title>
 
     <link rel="stylesheet" href="./css/global.css">
@@ -11,7 +12,7 @@
     <main>
         <section class="login">
             <div class="card">
-                <form action="login_usuario.php" method="post">
+                <form action="./login_usuario.php" method="post">
                     <h1>Entre ou cadastre-se</h1>
                     <input type="email" name="email" placeholder="Digite o seu e-mail">
                     <input type="password" name="senha" placeholder="Digite a sua senha">

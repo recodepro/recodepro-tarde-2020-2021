@@ -47,6 +47,24 @@ section {
 }
 .cadastro .image {
     background-image: url('../images/login.svg');
+    background-repeat: no-repeat;
+    background-position: center;
     width: 80%;
-    height: 80%;
+    height: 80vh;
+}
+
+@media (max-width: 1024px) {
+    .cadastro {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .login .card h1 {
+        font-size: 28px;
+    }
 }

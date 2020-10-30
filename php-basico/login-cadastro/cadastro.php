@@ -2,8 +2,9 @@
 <html lang="pt-BR">
 <head>
     <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cadastre-se</title>
-
+    
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/cadastro.css">
 </head>
@@ -13,6 +14,7 @@
             <form action="cadastro_usuario.php" method="post">
                 <h1>Cadastre-se</h1>
                 <input type="text" name="nome" placeholder="Digite o seu nome">
+                <input type="url" name="imagem" placeholder="Imagem">
                 <input type="email" name="email" placeholder="Digite o seu e-mail">
                 <input type="password" name="senha" placeholder="Digite uma senha">
                 <input type="password" name="conf_senha" placeholder="Confirme a sua senha">

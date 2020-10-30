@@ -1,6 +1,7 @@
 <?php
 
 $nome = $_POST['nome'];
+$imagem = $_POST['imagem'];
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 $conf_senha = $_POST['conf_senha'];
@@ -11,15 +12,13 @@ if (strlen($nome) > 3 && strlen($email) > 3 && strlen($senha) > 3 && $senha == $
 
     $conn = mysqli_connect("localhost", "root", "", "sistema");
 
+    // ------------------------------------------- DESAFIO -------------------------------------------
+    // 
+    // Verificar se o e-mail enviado via formulário já foi cadastrado no banco de dados
+    // Se o e-mail for encontrado, retone uma mensagem dizendo que outro usuário já possui esse e-mail. 
+    // Se o e-mail não for encontrado, cadastre o usuário. 
 
-
-    // Verificar se o e-mail já foi cadastrado
-    // Selecionar todos os e-mails do banco de dados e comparar com o e-mail anviado pelo formulário
-    // Se o e-mail não for encontrado, cadastre o usuário, senão retone uma mensagem dizendo que outro usuário já possui esse e-mail
-
-
-
-    $sql = "INSERT INTO usuarios (nome, email, senha) values ('$nome', '$email', '$senha_cripto')";
+    $sql = "INSERT INTO usuarios (nome, imagem, email, senha) values ('$nome', '$imagem', '$email', '$senha_cripto')";
     $conn->query($sql);
 
     echo "<script>

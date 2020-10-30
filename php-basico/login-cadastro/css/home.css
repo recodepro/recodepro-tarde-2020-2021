@@ -1,0 +1,27 @@
+header nav {
+    height: 60px;
+}
+
+nav .col-2 button {
+    background-color: #53c794;
+    width: 48px;
+    height: 48px;
+}
+nav .col-10 img {
+    width: 48px;
+}
+.container .form-row .btn {
+    background-color: #53c794;
+    color: #fff;
+    border-radius: 0px 4px 4px 0px;
+}
+.container .form-row input {
+    border-radius: 4px 0px 0px 4px;
+}
+.card .card-header img {
+    width: 48px;
+    height: 48px;
+}
+.card .card-header h5 {
+    display: inline-block;
+}
