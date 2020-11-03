@@ -6,7 +6,7 @@ create table sistema.usuarios(
     imagem varchar(150),
     email varchar(80) not null UNIQUE,
     senha char(32) not null
-)
+);
 
 CREATE TABLE postagens (
 	id_postagens int PRIMARY KEY AUTO_INCREMENT,
