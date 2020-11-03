@@ -6,6 +6,7 @@ nav .col-2 button {
     background-color: #53c794;
     width: 48px;
     height: 48px;
+    padding: 0 4px 0 0;
 }
 nav .col-10 img {
     width: 48px;
