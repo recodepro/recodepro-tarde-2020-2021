@@ -1,3 +1,9 @@
+<?php
+    require "Models/Student.php";
+
+    $total = Student::getTotalStudents();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,21 +18,28 @@
     
     <main style="height: 90vh; background-color: #ccc; padding-top: 5vh">
         <div class="card mx-auto d-flex justify-content-center" style="width:350px; height: 80vh">
+
+
+
             <canvas id="myChart" width="200" height="200"></canvas>
+
+
+
         </div>
     </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    
     <script>
         var ctx = document.getElementById("myChart").getContext('2d');
 
         var myChart = new Chart(ctx, {
-            type: 'doughnut',
+            type: 'pie',
             data: {
                 labels: ['Monitores', 'Alunos'],
                 datasets: [
                     {
-                        data: [50, 114],
+                        data: [50, <?= $total[0]["total_students"] ?>],
                         backgroundColor: [
                             '#be2121',
                             '#2172be'
@@ -36,5 +49,6 @@
             }
         });
     </script>
+
 </body>
 </html>
