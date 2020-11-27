@@ -4,60 +4,19 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>PHP com React</title>
+    <title>Recode</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
-<body onload="getApi()">
-
+<body>
     <div id="root"></div>
 
     <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
 
-    <script type="text/babel">
-        async function getApi() {
-            const response = await fetch("http://localhost/react-php/backend/");
-            const dados = await response.json();
-            console.log(dados)
-        }
-
-        const Header = () => {
-            return (
-                <header className="bg-dark nav align-items-center justify-content-center">
-                    <h1 className="text-light">Alunos</h1>
-                </header>
-            );
-        }
-
-        const Card = () => {
-            return (
-                <div>
-                    <div className="card w-50 mt-5 mx-auto">
-                        <div className="card-header">
-                            
-                        </div>
-                        <div className="card-body">
-                            
-                        </div>
-                    </div>
-                </div>
-            );
-        }
-
-        const App = () => {
-            return (
-                <div>
-                    <Header />
-                    <Card />
-                </div>
-            );
-        }
-
-        ReactDOM.render(
-            <App />,
-            document.getElementById('root')
-        )
-    </script>
+    <script type="text/babel" src="./components/Index/Header.jsx"></script>
+    <script type="text/babel" src="./components/Index/Card.jsx"></script>
+    <script type="text/babel" src="./components/Index/App.jsx"></script>
+    <script type="text/babel" src="./components/Index/index.js"></script>
 </body>
 </html>
