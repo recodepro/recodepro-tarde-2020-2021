@@ -5,9 +5,6 @@ const Header = () => {
                 <a href="#" className="navbar-brand nav-link text-light">
                     Recode
                 </a>
-                <a href="#" className="nav-link text-light">
-                    Cadastro de estudantes
-                </a>
             </nav>
         </header>
     );
