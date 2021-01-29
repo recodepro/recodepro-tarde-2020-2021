@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="bg-dark p-5" style="height: 100vh">
+        <div class="container border p-4 bg-white">
+            <h1 class="display-4">Soma</h1>
+            <hr />
+
+            <form action="" method="POST">
+                <input type="number" placeholder="Digite um numero..." name="num1" class="form-control my-3">
+                <input type="number" placeholder="Digite um numero..." name="num2" class="form-control my-3">
+
+                <input type="radio" name="opc" id="soma" value="soma" checked>
+                <label for="soma">Soma</label>
+
+                <input type="radio" name="opc" id="subt" value="subt">
+                <label for="subt">Subtrair</label>
+
+                <input type="radio" name="opc" id="mult" value="mult">
+                <label for="mult">Multiplicação</label>
+
+                <input type="radio" name="opc" id="divi" value="divi">
+                <label for="divi">Divisão</label>
+
+                <br />
+                <div class="mt-4">
+                    <button class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-secondary" type="reset">Cancelar</button>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
