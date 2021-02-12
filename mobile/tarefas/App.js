@@ -5,16 +5,18 @@ import {
   StatusBar, 
 } from 'react-native';
 
+
+import Routes from './src/routes';
+
 // import Tarefas from './src/screens/tarefas';
-import Login from './src/screens/Login';
+// import Login from './src/screens/Login';
 
 function App() {
   return (
     <View>
       <StatusBar />
 
-      {/* <Tarefas /> */}
-      <Login />
+      <Routes />
     </View>
   )
 }

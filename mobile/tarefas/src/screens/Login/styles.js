@@ -1,8 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Platform } from 'react-native';
 
 const styles = StyleSheet.create({
     caixa: {
-        height: "100%"
+        height: Platform.OS === "web" ? "100vh" : "100%"
         //web 100vh
     },
     fundo: {
