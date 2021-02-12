@@ -5,7 +5,7 @@ import {
 } from 'react-navigation';
 
 import Login from '../screens/Login';
-import Tarefas from '../screens/tarefas';
+import Tarefas from '../screens/Tarefas';
 
 const Rotas = {
     Login: {
