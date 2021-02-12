@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 
-import Routes from './src/Routes';
+import Routes from './src/routes';
 
 // import Tarefas from './src/screens/tarefas';
 // import Login from './src/screens/Login';
